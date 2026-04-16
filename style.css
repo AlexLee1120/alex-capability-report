@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #4285f4; --secondary-color: #34a853; --tertiary-color: #ea4335; --quaternary-color: #fbbc05;
+  --bg-color: #0f172a; --card-bg: #1e293b; --text-main: #f8fafc; --text-muted: #94a3b8;
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif; --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background-color: var(--bg-color); color: var(--text-main); font-family: var(--font-family); line-height: 1.6; overflow-x: hidden; }
+.glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+header { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle at top right, rgba(66, 133, 244, 0.15), transparent); }
+.hero-badge { background: rgba(66, 133, 244, 0.1); color: var(--primary-color); padding: 0.5rem 1.25rem; border-radius: 999px; margin-bottom: 1.5rem; }
+h1 { font-size: 4.5rem; font-weight: 800; background: linear-gradient(to right, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+section { padding: 4rem 0; }
+.section-title { font-size: 2.5rem; margin-bottom: 3rem; text-align: center; }
+.blueprint-card { padding: 2rem; margin-bottom: 2rem; border-radius: 1.5rem; }
+.pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.pillar-card { padding: 2.5rem; border-radius: 1.5rem; transition: var(--transition); }
+.pillar-card:hover { transform: translateY(-10px); border-color: var(--primary-color); }
+.pillar-icon { width: 50px; height: 50px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.05); border-radius: 1rem; }
+.table-container { overflow-x: auto; border-radius: 1.5rem; margin-top: 3rem; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+footer { padding: 4rem 0; text-align: center; }
+.contact-info { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; }
+.contact-item { color: var(--text-muted); text-decoration: none; }
